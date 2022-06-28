@@ -4,7 +4,7 @@ body {
   text-align: center;
 }
 
-#card {
+.card {
   display: inline-block;
   font-size: 60px;
   margin: auto;
@@ -24,14 +24,14 @@ body {
   top: 135px;
   left: -15px;
 }
-#spades-left {
+.spade-left {
   position: relative;
   font-size: 50px;
   top: -10px;
   left: -55px;
 }
 
-#spades-right {
+.spade-right {
   position: absolute;
   font-size: 50px;
   top: 295px;
