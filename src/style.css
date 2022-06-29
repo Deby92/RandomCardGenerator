@@ -1,57 +1,48 @@
 body {
-  margin: 0 auto;
-  background-color: salmon;
-  text-align: center;
+  background-color: #fdb99b;
+  box-sizing: border-box;
 }
 
 .card {
-  display: inline-block;
-  font-size: 60px;
+  text-align: center;
+  background: white;
   margin: auto;
-  border: 1px solid black;
-  position: relative;
-  height: 350px;
+  height: 200px;
   width: 250px;
-  background-color: #fff;
-  margin: 0 auto;
-  margin-top: 50px;
+  font-size: 80px;
+  padding: 20px;
+  padding-top: 180px;
+  border: 1px solid black;
   border-radius: 5%;
-  -moz-border-radius: 5%;
-}
-
-.number {
   position: relative;
-  top: 135px;
-  left: -15px;
+  &:before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+  }
+  &:after {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
 }
-.spade-left {
-  position: relative;
-  font-size: 50px;
-  top: -10px;
-  left: -55px;
-}
-
-.spade-right {
-  position: absolute;
-  font-size: 50px;
-  top: 295px;
-  left: 200px;
-  -webkit-transform: rotate(-180deg);
-}
-
-/* &.spade:before,
-&.spade:after {
-  content: "\2660";
-}
-&.club:before,
-&.club:after {
-  content: "\2663";
-}
-&.heart:before,
-&.heart:after {
-  content: "\2665";
-}
-&.diamond:before,
-&.diamond:after {
-  content: "\2666";
-} */
